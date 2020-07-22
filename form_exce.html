@@ -2,105 +2,125 @@
 <html>
 <head>
   <title>HTML form exercise</title>
-  <style type="text/css">
-    .contact_area ul {
-      float: left;
-      list-style-type: none
-    }
-    .label_list li{
-      margin: 5px
-    }
-    .input_list li{
-      margin: 2px
-    }
-    .list_like ul{
-      overflow-y: scroll;
-      list-style-type: none; 
-      width: 120px; 
-      height: 80px;
-    }
-
-    .list_like input{
-      border: none;
-      background-color: transparent;
-    }
-  </style>
 </head>
 <body bgcolor="#d3d3d3">
-<h1 style="text-align: center;">HTML form exercise</h1>
-<p><span style="color: Red">Please Note: </span>This Example demonstrate how HTML forms can be used. Submit button should submit the button and reset button should reset the form(revert the changes in form fields). The form layout should be same as below.</p>
-<form>
-  <fieldset class="contact_area" style="border: none;">
-  <legend style="margin-left: 10px"><strong>Contact form</strong></legend>
-  <ul class="label_list">
-      <li><label for="your_name*">Your name*:</label></li>
-      <li><label for="e_mail">Email*:</label></li>
-      <li><label for="phone_number">Phone number:</label></li>
-      <li><label for="website">Website*:</label></li>
-    </ul>
-    <ul class="input_list">
-      <li><input type="text" name="your_name*" id="your_name*" required></li>
-      <li><input type="Email" name="e_mail" id="e_mail" required></li>
-      <li><input type="tel" name="phone_number" id="phone_number"></li>
-      <li><input type="url" name="website" id="website" value="http://" size="40" required></li>
-  </ul>
-  </fieldset>
-  <label style="clear: both" for="comments">Comments*:</label><br>
-  <textarea rows="10" cols="40" name="comments" id="comments" required></textarea>
-  <br><br>
-  <strong>Text field</strong><br>
-  <label for="your_name">Your name:</label>
-  <input type="text" name="your_name" id="your_name">
-  <br><br>
-  <strong>Password field</strong><br>
-  <label for="password">Your name:</label>
-  <input type="password" name="password" id="password">
-  <br><br>
-
-  <strong>Radio buttons</strong><br>
-  <label for="like_pizza">Do you like pizza?</label><br>
-  <input type="radio" id="yes" name="like_pizza" id="like_pizza" value="Yes">
-  <label for="yes">Yes</label><br>
-  <input type="radio" id="no" name="like_pizza" value="No">
-  <label for="no">No</label><br>
-  <input type="radio" id="maybe" name="like_pizza" value="Maybe">
-  <label for="maybe">Maybe</label><br>
-  <input type="radio" id="never_tried" name="like_pizza" value="Never tried">
-  <label for="never_tried">Never tried</label><br><br>
-  <strong>Check Box</strong><br>
-  <input type="checkbox" name="like_service" id="like_service">
-  <label for="like_service">Check this box if you like our service</label>
-  <br><br>
-  <strong>Text area</strong><br>
-  <label for="anything_you_say">Anything you would like to say?</label><br>
-  <textarea rows="5" cols="50" name="anything_you_say" id="anything_you_say"></textarea>
-  <br><br>
-  <strong>I Like</strong><br>
-  <div class="list_like">
-    <ul>
-      <li><input type="button" name="mushrooms" value="mushrooms"></li>
-      <li><input type="button" name="green_peppers" value="green_peppers"></li>
-      <li><input type="button" name="onions" value="onions"></li>
-      <li><input type="button" name="tomatoes" value="tomatoes"></li>
-      <li><input type="button" name="olives" value="olives"></li>
-    </ul>
-  </div>
-  <br><br>
-  <strong>Menu</strong><br>
-  <label for="colors_list">Your favorite color:</label><br>
-  <select id="colors" name="colors_list">
-    <option value="Red">red</option>
-    <option value="Blue">blue</option>
-    <option value="Yellow">yellow</option>
-  </select>
-  <br><br>
-  <strong>Attach file</strong><br>
-  <label for="file_select" style="border: 1px;"></label>
-  <input type="file" id="file_select">
-  <br><br>
-  <strong>Buttons</strong><br>
-  <input type="submit" value="Submit">
-  <input type="reset">
-</form>
+<table width="100%">
+  <tr>
+    <th colspan="3"><h1>HTML form exercise</h1></th>  
+  </tr>
+  
+  <tr>
+    <td colspan="3">
+      <p><span style="color: Red">Please Note: </span>This Example demonstrate how HTML forms can be used. Submit button should submit the button and reset button should reset the form(revert the changes in form fields). The form layout should be same as below.</p>    
+    </td>
+  </tr >
+  <form>
+    <tr>
+      <td colspan="3">
+        <fieldset class="contact_area" style="border: none;">
+          <legend><strong>Contact form</strong></legend>
+        </fieldset>
+      </td>
+    </tr>
+    <tr>
+      <td width="10%">
+        <label for="your_name*">Your name*:</label><br>
+        <label for="e_mail">Email*:</label><br>
+        <label for="phone_number">Phone number:</label><br>
+        <label for="website">Website*:</label><br>
+      </td>
+      <td>
+        <input type="text" name="your_name*" id="your_name*" required><br>
+        <input type="Email" name="e_mail" id="e_mail" required><br>
+        <input type="tel" name="phone_number" id="phone_number"><br>
+        <input type="url" name="website" id="website" value="http://" size="40" required><br>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <label for="comments">Comments*:</label><br>
+        <textarea rows="10" cols="40" name="comments" id="comments" required></textarea> 
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>Text field</strong><br>
+        <label for="your_name">Your name:</label>
+        <input type="text" name="your_name" id="your_name">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+          <strong>Password field</strong><br>
+          <label for="password">Your name:</label>
+          <input type="password" name="password" id="password"> 
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>Radio buttons</strong><br>
+        <label for="like_pizza">Do you like pizza?</label><br>
+        <input type="radio" id="yes" name="like_pizza" id="like_pizza" value="Yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="like_pizza" value="No">
+        <label for="no">No</label><br>
+        <input type="radio" id="maybe" name="like_pizza" value="Maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" id="never_tried" name="like_pizza" value="Never tried">
+        <label for="never_tried">Never tried</label>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>Check Box</strong><br>
+        <input type="checkbox" name="like_service" id="like_service">
+        <label for="like_service">Check this box if you like our service</label> 
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>Text area</strong><br>
+        <label for="anything_you_say">Anything you would like to say?</label><br>
+        <textarea rows="5" cols="50" name="anything_you_say" id="anything_you_say"></textarea> 
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>I Like</strong><br>
+        <ul style="overflow-y: scroll; list-style-type: none; width: 200px; height: 80px;">
+          <li><input type="text" name="mushrooms" value="mushrooms" readonly></li>
+          <li><input type="text" name="green_peppers" value="green_peppers" readonly></li>
+          <li><input type="text" name="onions" value="onions" readonly></li>
+          <li><input type="text" name="tomatoes" value="tomatoes" readonly></li>
+          <li><input type="text" name="olives" value="olives" readonly></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>Menu</strong><br>
+        <label for="colors_list">Your favorite color:</label><br>
+        <select id="colors" name="colors_list">
+          <option value="Red">red</option>
+          <option value="Blue">blue</option>
+          <option value="Yellow">yellow</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>Attach file</strong><br>
+        <input type="file" id="file_select">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>Buttons</strong><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+      </td>
+    </tr>
+  </form>
+</table>  
 </body>
 </html>
