@@ -1,0 +1,108 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+pre{
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+#header {
+  border-bottom: 2px solid #db2927;
+  overflow: auto;
+  position: relative;
+}
+
+#header p{
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  float: right;
+  font-size: 13px;
+  margin: 10px;
+}
+
+#header span{
+  color: #045198;
+}
+
+#header img {
+  float: left;
+  margin: 10px;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 18px;
+  color: #2c286d;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+#form {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 33%;  
+  /*width: 170px;*/
+}
+
+table{
+  border: 2px solid #bcbcbc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #ececec;
+}
+
+.label_col {
+  text-align: right;
+  vertical-align: top;
+}
+
+.label_col label{
+  font-size: 14px;
+}
+
+.input_col{
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.input_col input,textarea{
+  width: 360px;
+  height: 25px;
+  border: 1px solid #b9b9b9;
+}
+
+.input_col label {
+  margin-right: 20px;
+  font-size: 13px;
+  color: #6f6f6f;
+}
+
+.input_col input[type="radio"]{
+  width: 15px;
+  height: 15px;
+}
+
+#address{
+  height: 135px;
+}
+
+#dob {
+  width: 350px;
+  color: #6f6f6f;
+}
+
+#submit{
+  background-color: #dc2927;
+  border: 2px solid #a10200;
+  width: 130px;
+  height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: white; 
+}

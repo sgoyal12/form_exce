@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 3</title>
+  <link rel="stylesheet" type="text/css" href="exce_3.css">
+</head>
+<body>
+  <div id="header">
+    <img src="vinsol_logo.png" alt="Vinsol Logo">
+    <pre>
+      <p>Email us at: <span>sales@vinsol.com</span>    Skype: <span>Vinsol</span></p>
+    </pre>
+  </div>
+  <div id="form">
+    <h3>Please fill the form below</h3>
+    <table>
+      <tr>
+        <td class="label_col"><label for="first_name">First Name</label></td>
+        <td class="input_col"><input type="text" name="first_name" id="first_name"></td>
+      </tr>
+      <tr>
+        <td class="label_col"><label for="last_name">Last Name</label></td>
+        <td class="input_col"> <input type="text" name="last_name" id="last_name"></td>
+      </tr>
+      <tr>
+        <td class="label_col"><label for="email">Email</label></td>
+        <td class="input_col"><input type="Email" name="email" id="email"></td>
+      </tr>
+      <tr>
+        <td class="label_col"><label for="password">Password</label></td>
+        <td class="input_col"><input type="password" name="password" id="password"></td>
+      </tr>
+      <tr>
+        <td class="label_col"><label for="gender">Gender</label></td>
+        <td class="input_col">
+          <input type="radio" id="male" value="Male" name="gender">
+          <label for="male">Male</label>
+          <input type="radio" id="female" value="Female" name="gender">
+          <label for="female">Female</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="label_col"><label for="dob">Date of Birth</label></td>
+        <td class="input_col"><input type="date" name="date_of_birth" id="dob"></td>
+      </tr>
+      <tr>
+        <td class="label_col" rowspan="2"><label for="address" id="address_label">Address</label></td>
+        <td class="input_col"><textarea id="address"></textarea></td>
+      </tr>
+      <tr>
+        <td class="input_col"><input type="button" name="submit" value="Submit Details" id="submit"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
